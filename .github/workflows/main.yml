@@ -43,6 +43,7 @@ jobs:
         push: true
         tags: ${{env.AZURE_CONTAINER_REGISTRY}}/${{env.CONTAINER_NAME}}:${{github.sha}}
         file: ./Dockerfile
+  
   deploy:
     runs-on: ubuntu-latest
 
